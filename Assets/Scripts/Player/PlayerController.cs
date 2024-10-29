@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public float runSpeed;
     public float jumpPower;
     private Vector2 curMovementInput;
-    private bool IsRunning = false;
+    public bool IsRunning { get; private set; }
     public LayerMask groundLayerMask;
 
     [Header("Look")]
