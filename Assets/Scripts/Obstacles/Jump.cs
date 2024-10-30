@@ -15,7 +15,7 @@ public class Jump : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        _rigidbody = collision.gameObject.GetComponent<Rigidbody>();
+        _rigidbody = collision.rigidbody;
 
         if (_rigidbody != null)
         {
